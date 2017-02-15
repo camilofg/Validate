@@ -1,0 +1,12 @@
+C:\Users\Camilo\Documents\Visual Studio 2013\Projects\CF_NET\Validate\Validate\bin\Validate.dll.config
+C:\Users\Camilo\Documents\Visual Studio 2013\Projects\CF_NET\Validate\Validate\bin\Validate.dll
+C:\Users\Camilo\Documents\Visual Studio 2013\Projects\CF_NET\Validate\Validate\bin\Validate.pdb
+C:\Users\Camilo\Documents\Visual Studio 2013\Projects\CF_NET\Validate\Validate\obj\Debug\Validate.dll
+C:\Users\Camilo\Documents\Visual Studio 2013\Projects\CF_NET\Validate\Validate\obj\Debug\Validate.pdb
+C:\Users\Camilo\Documents\Visual Studio 2013\Projects\CF_NET\Validate\Validate\obj\Debug\Validate.csprojResolveAssemblyReference.cache
+J:\Dropbox\Tales\Validate\Validate\bin\Validate.dll.config
+J:\Dropbox\Tales\Validate\Validate\bin\Validate.dll
+J:\Dropbox\Tales\Validate\Validate\bin\Validate.pdb
+J:\Dropbox\Tales\Validate\Validate\obj\Debug\Validate.csprojResolveAssemblyReference.cache
+J:\Dropbox\Tales\Validate\Validate\obj\Debug\Validate.dll
+J:\Dropbox\Tales\Validate\Validate\obj\Debug\Validate.pdb
