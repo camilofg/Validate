@@ -10,3 +10,12 @@ J:\Dropbox\Tales\Validate\Validate\bin\Validate.pdb
 J:\Dropbox\Tales\Validate\Validate\obj\Debug\Validate.csprojResolveAssemblyReference.cache
 J:\Dropbox\Tales\Validate\Validate\obj\Debug\Validate.dll
 J:\Dropbox\Tales\Validate\Validate\obj\Debug\Validate.pdb
+C:\Users\camus\Source\Repos\Validate\bin\Validate.dll.config
+C:\Users\camus\Source\Repos\Validate\bin\Validate.dll
+C:\Users\camus\Source\Repos\Validate\bin\Validate.pdb
+C:\Users\camus\Source\Repos\Validate\obj\Debug\Validate.dll
+C:\Users\camus\Source\Repos\Validate\obj\Debug\Validate.pdb
+C:\Users\camus\source\repos\Validate\obj\Debug\Validate.csprojAssemblyReference.cache
+C:\Users\camus\source\repos\Validate\bin\Newtonsoft.Json.dll
+C:\Users\camus\source\repos\Validate\bin\Newtonsoft.Json.xml
+C:\Users\camus\source\repos\Validate\obj\Debug\Validate.csproj.CopyComplete
