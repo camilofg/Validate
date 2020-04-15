@@ -74,7 +74,9 @@
             }
         }());
 
+
         $(document).ready(function () {
+
             var paper = new Raphael("ods_div", 1000, 1000);
             var counter = 0;
             //var path = paper.path("M20 20L190 190");
@@ -83,8 +85,7 @@
             //var container = document.getElementById('body');
             //paper = new Raphael(container, config.canvas.width, config.canvas.height);
             var arrayParams = {}
-            arrayParams.xmlVarRoute = $("#HdnXmlRoute").val();
-            arrayParams.errores = $("#HdnErrores").val();
+            arrayParams.ods = $("#HdnOds").val();
             arrayParams = JSON.stringify(arrayParams);
             $.ajax({
                 type: "POST",
@@ -110,7 +111,7 @@
                                     "font-weight": "bold"
                                 });
                     });
-                    $(result.d.ListRelations.relaciones).each(function () {
+                    $(result.d.ListRelations).each(function () {
                         if ($(this)[0].rel_principal != '#FFFFFF' && $(this)[0].rel_principal != '' && $(this)[0].rel_secundaria == '') {
                             paper.path("M" +
                                 parseFloat($(this)[0].inicio.x - 400) +
@@ -139,7 +140,7 @@
                                     "," +
                                     parseFloat($(this)[0].inicio.y - 150)).attr({
                                         stroke: $(this)[0].rel_principal,
-                                        'stroke-width': 1,
+                                        'stroke-width': 1
                                     });
                             }
                             else {
@@ -175,34 +176,6 @@
                     });
                 },
 
-                //    if ($(this)[0].valor_relacion > 0.067) {
-                //        var color = ""
-                //        if ($(this)[0].valor_relacion < 0.269) {
-                //            color = "#B404AE";
-                //        }
-                //        else if ($(this)[0].valor_relacion < 0.47) {
-                //            color = "#FFFF00";
-                //        }
-                //        else color = "#00FD7F";
-
-                //        paper.path("M" +
-                //            parseFloat($(this)[0].inicio.x) +
-                //            ", " +
-                //            parseFloat($(this)[0].inicio.y) +
-                //            ", L" +
-                //            parseFloat($(this)[0].fin.x) +
-                //            "," +
-                //            parseFloat($(this)[0].fin.y)).attr({
-                //            stroke: color,
-                //            'stroke-width': 1,
-                //            'arrow-end':
-                //                'classic-wide-long',
-                //            "fill": "90-#f00:5-#00f:95",
-                //            "fill-opacity": 0.5
-                //        });
-                //    }
-                //});
-
                 error: function (XMLHttpRequest, textStatus, errorThrown) {
                     alert(XMLDocument.toString());
                 }
@@ -215,6 +188,7 @@
     <form id="form1" runat="server">
         <div id="ods_div">
         </div>
+        <asp:HiddenField ID="HdnOds" runat="server" />
     </form>
 </body>
 </html>

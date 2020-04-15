@@ -16,22 +16,24 @@ namespace Validate
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            HdnOds.Value = Request.QueryString["Ods"];
         }
 
         [WebMethod]
-        public static object RetrieveXml()
+        public static object RetrieveXml(string ods)
         {
-            var wrapper = new WrapperObject {ListOds = ListOds(), ListRelations = ListRelations()};
+            var wrapper = new WrapperObject {ListOds = ListOds(), ListRelations = ListRelations(ods)};
             return wrapper;
         }
 
-        private static RootObject_0 ListRelations()
+        private static List<Relacion> ListRelations(string ods)
         {
             using (StreamReader r = new StreamReader(@"C: \Users\camus\source\repos\Validate\XMLs\relations_v3.json"))
             {
                 string json = r.ReadToEnd();
-                RootObject_0 items = JsonConvert.DeserializeObject<RootObject_0>(json);
+                var items = JsonConvert.DeserializeObject<RootObject_0>(json).relaciones.ToList();
+                if (ods != "")
+                    items = items.Where(x => x.origen.ToString() == ods).ToList();
                 return items;
             }
         }

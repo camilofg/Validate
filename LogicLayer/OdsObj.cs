@@ -53,6 +53,6 @@ namespace Validate.LogicLayer
     public class WrapperObject
     {
         public RootObject ListOds { get; set; }
-        public RootObject_0 ListRelations { get; set; }
+        public List<Relacion> ListRelations { get; set; }
     }
 }
