@@ -37,7 +37,10 @@ namespace Validate.LogicLayer
 
     public class Relacion
     {
-        public double valor_relacion { get; set; }
+        public int origen { get; set; }
+        public int destino { get; set; }
+        public string rel_principal { get; set; }
+        public string rel_secundaria { get; set; }
         public Inicio inicio { get; set; }
         public Fin fin { get; set; }
     }

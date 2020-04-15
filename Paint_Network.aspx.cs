@@ -28,7 +28,7 @@ namespace Validate
 
         private static RootObject_0 ListRelations()
         {
-            using (StreamReader r = new StreamReader(@"C: \Users\camus\source\repos\Validate\XMLs\relations_.json"))
+            using (StreamReader r = new StreamReader(@"C: \Users\camus\source\repos\Validate\XMLs\relations_v3.json"))
             {
                 string json = r.ReadToEnd();
                 RootObject_0 items = JsonConvert.DeserializeObject<RootObject_0>(json);
